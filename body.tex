@@ -1,0 +1,50 @@
+\section*{Introduction}
+
+\noindent
+This is a code block:
+
+\lstset{language=C++}
+\begin{lstlisting}
+#include <iostream>
+
+int main();
+
+// comment
+int main() {
+    std::cout << "hi there!!!" << std::endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+\noindent
+This is a table:
+
+\begin{table}[H]
+    \centering
+    \caption{Add caption}
+    \sisetup{group-digits=false}
+        \begin{tabular}{llS[table-format=-1.6] S[table-format=1.6]}
+        \toprule
+            &       & {Parameter} & {Standard Error} \\
+        \midrule
+                & Const & 0.446       & 0.088   \\
+        Mean    & ED    & 0.0751      & 0.0063  \\
+                & EX    & 0.0278      & 0.0041  \\
+        \midrule
+                    & Const & -3.64       & 0.36    \\
+        Variance    & ED    & 0.0699      & 0.0254  \\
+                    & EX    & 0.0747      & 0.185   \\
+        \bottomrule
+        \end{tabular}
+    \label{tab:addlabel}
+\end{table}
+
+\noindent
+This is an equation:
+\
+\begin{flalign*}
+\phantom{a}
+    & X[k] = \text{DFT}_N\{x[n]\} = \sum_{n=0}^{N - 1}{x[n]e^{\frac{-2\pi j}{N} nk}} && \\
+    & x[n] = \text{IDFT}_N\{X[k]\} = \frac{1}{N} \sum_{k=0}^{N - 1}{X[k]e^{\frac{2\pi j}{N} kn}} &&
+\end{flalign*}
